@@ -33,6 +33,8 @@ class api_swgoh_help():
                           'events': '/swgoh/events',
                           'battles': '/swgoh/battles'}
 
+        self.relic_gp = [0, 759, 1594, 2505, 3492, 4554, 6072, 7969]
+
         if settings.charStatsApi:
             self.charStatsApi = settings.charStatsApi
         else:
@@ -56,15 +58,28 @@ class api_swgoh_help():
         signin_url = self.urlBase+self.signin
         payload = self.user
         head = {"Content-type": "application/x-www-form-urlencoded"}
-        r = requests.request('POST',signin_url, headers=head, data=payload, timeout = 10)
+        r = requests.request('POST', signin_url, headers=head, data=payload, timeout=10)
         if r.status_code != 200:
             error = 'Login failed!'
-            return  {"status_code" : r.status_code,
-                     "message": error}
+            return {"status_code": r.status_code,
+                    "message": error}
         response = loads(r.content.decode('utf-8'))
-        self.token = { 'Authorization': "Bearer " + response['access_token'],
-                       'expires': time.time() + response['expires_in'] - 30}
-        return(self.token)
+        self.token = {'Authorization': "Bearer " + response['access_token'],
+                      'expires': time.time() + response['expires_in'] - 30}
+        return (self.token)
+
+    def getVersion(self):
+        data_url = self.urlBase + '/version'
+        try:
+            r = requests.get(data_url)
+            if r.status_code != 200:
+                data = {"status_code": r.status_code,
+                        "message": "Unable to fetch version"}
+            else:
+                data = loads(r.content.decode('utf-8'))
+        except Exception as e:
+            data = {"message": 'Cannot fetch version', "exception": str(e)}
+        return data
 
     def fetchAPI(self, url, payload):
         self._getAccessToken()
@@ -79,7 +94,7 @@ class api_swgoh_help():
             else:
                 data = loads(r.content.decode('utf-8'))
         except Exception as e:
-            data = {"message": 'Cannot fetch data'}
+            data = {"message": 'Cannot fetch data', "exception": str(e)}
         return data
 
     def fetchZetas(self):
@@ -96,7 +111,11 @@ class api_swgoh_help():
 
     def fetchBattles(self, payload):
         if not payload:
-            payload = { "language": "eng_us", "enums": True }
+            p = {}
+            p['allycodes'] = payload
+            p['language'] = "eng_us"
+            p['enums'] = True
+            payload = p
         try:
             return self.fetchAPI(self.endpoints['battles'], payload)
         except Exception as e:
@@ -104,7 +123,11 @@ class api_swgoh_help():
 
     def fetchEvents(self, payload):
         if not payload:
-            payload = { "language": "eng_us", "enums": True }
+            p = {}
+            p['allycodes'] = payload
+            p['language'] = "eng_us"
+            p['enums'] = True
+            payload = p
         try:
             return self.fetchAPI(self.endpoints['events'], payload)
         except Exception as e:
@@ -191,11 +214,27 @@ class api_swgoh_help():
             p['enums'] = True
             payload = p
         elif type(payload) != dict:
-            return({'message': "Payload ERROR: integer, list of integers, or dict expected.", 'status_code': "000"})
+            return ({'message': "Payload ERROR: integer, list of integers, or dict expected.", 'status_code': "000"})
         try:
             return self.fetchAPI(self.endpoints['roster'], payload)
         except Exception as e:
             return str(e)
+
+    def fetchStats(self, allycode):
+        '''Get style stat request via Crinolo API'''
+        if not allycode:
+            raise ValueError('No allycode provided')
+        apiUrl = self.charStatsApi + '/player/' + str(allycode) + '?flags=gameStyle'
+        head = {'Content-Type': 'application/json'}
+        r = requests.request('GET', apiUrl, headers=head)
+        if r.status_code != 200:
+            error = 'Cannot fetch data - error code'
+            data = {"status_code": r.status_code,
+                    "message": error}
+        else:
+            data = loads(r.content.decode('utf-8'))
+        return (data)
+
 
 class settings():
     def __init__(self, _username, _password, **kwargs):
