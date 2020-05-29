@@ -12,19 +12,22 @@ import time
 
 class api_swgoh_help():
     def __init__(self, settings):
-        self.user = "username=" + settings.username
-        self.user += "&password=" + settings.password
-        self.user += "&grant_type=password"
-        self.user += "&client_id=" + settings.client_id
-        self.user += "&client_secret=" + settings.client_secret
-
+        '''
+        :param settings: Currently expects settings class object (defined below) or python dictionary
+        username and password are required parameters within the settings
+        '''
+        # Set defaults
+        self.charStatsApi = 'https://crinolo-swgoh.glitch.me/testCalc/api'
+        self.statsLocalPort = "8081"
+        self.client_id = '123'
+        self.client_secret = 'abc'
         self.token = {}
-        self.logged_in = False
-
         self.urlBase = 'https://api.swgoh.help'
         self.signin = '/auth/signin'
         self.endpoints = {'guilds': '/swgoh/guilds',
+                          'guild': '/swgoh/guilds', # alias to support typos in client code
                           'players': '/swgoh/players',
+                          'player': '/swgoh/players', # alias to support typos in client code
                           'roster': '/swgoh/roster',
                           'data': '/swgoh/data',
                           'units': '/swgoh/units',
@@ -32,24 +35,65 @@ class api_swgoh_help():
                           'squads': '/swgoh/squads',
                           'events': '/swgoh/events',
                           'battles': '/swgoh/battles'}
-
-        self.relic_gp = [0, 759, 1594, 2505, 3492, 4554, 6072, 7969]
-
-        if settings.charStatsApi:
-            self.charStatsApi = settings.charStatsApi
+        self.verbose = False
+        self.debug = False
+        if type(settings) is dict:
+            if 'username' in settings:
+                self.username = settings['username']
+            if 'password' in settings:
+                self.password = settings['password']
+            if 'client_id' in settings:
+                self.client_id = settings['client_id']
+            if 'client_secret' in settings:
+                self.client_secret = settings['client_secret']
+            if 'charStatsApi' in settings:
+                self.charStatsApi = settings['charStatsApi']
+            if 'statsLocalPort' in settings:
+                self.statsLocalPort = settings['statsLocalPort']
+            if 'statsUrlBase' in settings:
+                self.statsUrlBase = settings['statsUrlBase']
+            if 'verbose' in settings:
+                self.verbose = settings['verbose'] # currently not implemented
+            if 'debug' in settings:
+                self.debug = settings['debug'] # currently not implemented
+            if 'statsLocalPort' in settings:
+                self.statsLocalPort = settings['statsLocalPort']
+            if 'statsUrlBase' in settings:
+                self.statsUrlBase = settings['statsUrlBase']
+            else:
+                self.statsUrlBase = "http://127.0.0.1:{}/api".format(self.statsLocalPort)
+            if 'charStatsApi' in settings:
+                self.charStatsApi = settings['charStatsApi']
         else:
-            self.charStatsApi = 'https://crinolo-swgoh.glitch.me/testCalc/api'
+            self.username = settings.username
+            self.password = settings.password
+            self.client_id = settings.client_id
+            self.client_secret = settings.client_secret
+            self.charStatsApi = settings.charStatsApi
+            self.statsLocalPort = settings.statsLocalPort
+            self.statsUrlBase = settings.statsUrlBase
+            self.verbose = settings.verbose  # currently not implemented
+            self.debug = settings.debug # currently not implemented
+            self.user = "username=" + settings.username
+            self.user += "&password=" + settings.password
+            self.user += "&grant_type=password"
+            self.user += "&client_id=" + settings.client_id
+            self.user += "&client_secret=" + settings.client_secret
+            if settings.statsLocalPort:
+                self.statsLocalPort = settings.statsLocalPort
+            if settings.statsUrlBase:
+                self.statsUrlBase = settings.statsUrlBase
+            else:
+                self.statsUrlBase = "http://127.0.0.1:{}/api".format(self.statsLocalPort)
+            if settings.charStatsApi:
+                self.charStatsApi = settings.charStatsApi
+        # Construct API login URL
+        self.user = "username=" + self.username
+        self.user += "&password=" + self.password
+        self.user += "&grant_type=password"
+        self.user += "&client_id=" + self.client_id
+        self.user += "&client_secret=" + self.client_secret
 
-        self.verbose = settings.verbose if settings.verbose else False
-        self.debug = settings.debug if settings.debug else False
-        self.dump = settings.dump if settings.dump else False
-
-        self.data_type = {'guild':'/swgoh/guild/',
-                          'player':'/swgoh/player/',
-                          'data':'/swgoh/data/',
-                          'units':'/swgoh/units',
-                          'battles':'/swgoh/battles'}
-        
     def _getAccessToken(self):
         if 'expires' in self.token.keys():
             token_expire_time = self.token['expires']
@@ -58,15 +102,15 @@ class api_swgoh_help():
         signin_url = self.urlBase+self.signin
         payload = self.user
         head = {"Content-type": "application/x-www-form-urlencoded"}
-        r = requests.request('POST', signin_url, headers=head, data=payload, timeout=10)
+        r = requests.request('POST',signin_url, headers=head, data=payload, timeout = 10)
         if r.status_code != 200:
             error = 'Login failed!'
-            return {"status_code": r.status_code,
-                    "message": error}
+            return  {"status_code" : r.status_code,
+                     "message": error}
         response = loads(r.content.decode('utf-8'))
-        self.token = {'Authorization': "Bearer " + response['access_token'],
-                      'expires': time.time() + response['expires_in'] - 30}
-        return (self.token)
+        self.token = { 'Authorization': "Bearer " + response['access_token'],
+                       'expires': time.time() + response['expires_in'] - 30}
+        return(self.token)
 
     def getVersion(self):
         data_url = self.urlBase + '/version'
@@ -88,7 +132,8 @@ class api_swgoh_help():
         try:
             r = requests.request('POST', data_url, headers=head, data=dumps(payload))
             if r.status_code != 200:
-                error = 'Cannot fetch data - error code'
+                # error = 'Cannot fetch data - error code'
+                error = r.content.decode('utf-8')
                 data = {"status_code": r.status_code,
                         "message": error}
             else:
@@ -109,8 +154,8 @@ class api_swgoh_help():
         except Exception as e:
             return str(e)
 
-    def fetchBattles(self, payload):
-        if not payload:
+    def fetchBattles(self, payload=None):
+        if payload is None:
             p = {}
             p['allycodes'] = payload
             p['language'] = "eng_us"
@@ -121,8 +166,8 @@ class api_swgoh_help():
         except Exception as e:
             return str(e)
 
-    def fetchEvents(self, payload):
-        if not payload:
+    def fetchEvents(self, payload=None):
+        if payload is None:
             p = {}
             p['allycodes'] = payload
             p['language'] = "eng_us"
@@ -214,7 +259,7 @@ class api_swgoh_help():
             p['enums'] = True
             payload = p
         elif type(payload) != dict:
-            return ({'message': "Payload ERROR: integer, list of integers, or dict expected.", 'status_code': "000"})
+            return({'message': "Payload ERROR: integer, list of integers, or dict expected.", 'status_code': "000"})
         try:
             return self.fetchAPI(self.endpoints['roster'], payload)
         except Exception as e:
@@ -235,6 +280,21 @@ class api_swgoh_help():
             data = loads(r.content.decode('utf-8'))
         return (data)
 
+    def fetchStatsLocal(self, rosters):
+        '''Calculate player stats via a locally run instance of the Crinolo stats calculator'''
+        if type(rosters) != list:
+            return({'message': "Input ERROR: dictionary expected."})
+        apiUrl = self.statsUrlBase
+        head = {'Content-Type': 'application/json'}
+        r = requests.request('POST', apiUrl, headers=head, data=rosters)
+        if r.status_code != 200:
+            error = 'Cannot fetch data - error code'
+            data = {"status_code": r.status_code,
+                    "message": error}
+        else:
+            data = loads(r.content.decode('utf-8'))
+        return (data)
+
 
 class settings():
     def __init__(self, _username, _password, **kwargs):
@@ -243,6 +303,8 @@ class settings():
         self.client_id = kwargs.get('client_id', '123')
         self.client_secret = kwargs.get('client_secret', 'abc')
         self.charStatsApi = kwargs.get('charStatsApi', '')
-        self.verbose = kwargs.get('verbose', False)
-        self.debug = kwargs.get('debug', False)
-        self.dump = kwargs.get('dump', False)
+        self.statsLocalPort = kwargs.get('statsLocalPort', "8081")
+        self.statsUrlBase = kwargs.get('statsUrlBase', "http://127.0.0.1:{}".format(self.statsLocalPort))
+        self.verbose = kwargs.get('verbose', False) # currently not implemented
+        self.debug = kwargs.get('debug', False) # currently not implemented
+        self.dump = kwargs.get('dump', False) # currently not implemented
