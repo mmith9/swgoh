@@ -188,12 +188,14 @@ class api_swgoh_help():
         except Exception as e:
             return str(e)
 
-    def fetchPlayers(self, payload):
+    def fetchPlayers(self, payload, project=""):
         if type(payload) == list:
             p = {}
             p['allycodes'] = payload
             p['language'] = "eng_us"
             p['enums'] = True
+            if project:
+                p['project']=project                                    
             payload = p
         elif type(payload) == int:
             p = {}
