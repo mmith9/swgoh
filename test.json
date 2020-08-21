@@ -1,51 +1,735 @@
 [
     {
-        "name": "KingKc",
+        "name": "Derpy Face",
         "arena": {
             "char": {
-                "rank": 114
+                "rank": 36
             },
             "ship": {
-                "rank": 32
+                "rank": 134
             }
         },
-        "updated": 1597957998001
+        "updated": 1598010080155
     },
     {
-        "name": "Skyash",
+        "name": "Hubbojnr Revanche",
         "arena": {
             "char": {
-                "rank": 160
+                "rank": 8
             },
             "ship": {
-                "rank": 22
+                "rank": 3
             }
         },
-        "updated": 1597957190445
+        "updated": 1598010080142
+    },
+    {
+        "name": "Old BenKenobi",
+        "arena": {
+            "char": {
+                "rank": 14
+            },
+            "ship": {
+                "rank": 2
+            }
+        },
+        "updated": 1598010079645
+    },
+    {
+        "name": "GeneraleBeta97",
+        "arena": {
+            "char": {
+                "rank": 542
+            },
+            "ship": {
+                "rank": 29
+            }
+        },
+        "updated": 1598010079622
+    },
+    {
+        "name": "MysteryBeef",
+        "arena": {
+            "char": {
+                "rank": 80
+            },
+            "ship": {
+                "rank": 19
+            }
+        },
+        "updated": 1598010079392
+    },
+    {
+        "name": "Josc",
+        "arena": {
+            "char": {
+                "rank": 219
+            },
+            "ship": {
+                "rank": 35
+            }
+        },
+        "updated": 1598010079113
     },
     {
         "name": "Jan Simon",
         "arena": {
             "char": {
-                "rank": 12
+                "rank": 30
+            },
+            "ship": {
+                "rank": 14
+            }
+        },
+        "updated": 1598010079093
+    },
+    {
+        "name": "Fighting Egg",
+        "arena": {
+            "char": {
+                "rank": 159
+            },
+            "ship": {
+                "rank": 29
+            }
+        },
+        "updated": 1598010078850
+    },
+    {
+        "name": "Force",
+        "arena": {
+            "char": {
+                "rank": 69
+            },
+            "ship": {
+                "rank": 14
+            }
+        },
+        "updated": 1598010078752
+    },
+    {
+        "name": "Sedavaa's",
+        "arena": {
+            "char": {
+                "rank": 65
+            },
+            "ship": {
+                "rank": 17
+            }
+        },
+        "updated": 1598010078727
+    },
+    {
+        "name": "rpm116",
+        "arena": {
+            "char": {
+                "rank": 154
+            },
+            "ship": {
+                "rank": 38
+            }
+        },
+        "updated": 1598010078655
+    },
+    {
+        "name": "Castor Troy",
+        "arena": {
+            "char": {
+                "rank": 16
+            },
+            "ship": {
+                "rank": 1
+            }
+        },
+        "updated": 1598010078346
+    },
+    {
+        "name": "Mikayas",
+        "arena": {
+            "char": {
+                "rank": 22
+            },
+            "ship": {
+                "rank": 2
+            }
+        },
+        "updated": 1598010078004
+    },
+    {
+        "name": "Rvdbandit",
+        "arena": {
+            "char": {
+                "rank": 31
+            },
+            "ship": {
+                "rank": 5
+            }
+        },
+        "updated": 1598010075307
+    },
+    {
+        "name": "Dregn",
+        "arena": {
+            "char": {
+                "rank": 50
+            },
+            "ship": {
+                "rank": 31
+            }
+        },
+        "updated": 1598010004911
+    },
+    {
+        "name": "Tartan Rekem",
+        "arena": {
+            "char": {
+                "rank": 66
+            },
+            "ship": {
+                "rank": 10
+            }
+        },
+        "updated": 1598010004768
+    },
+    {
+        "name": "Coa020",
+        "arena": {
+            "char": {
+                "rank": 33
+            },
+            "ship": {
+                "rank": 14
+            }
+        },
+        "updated": 1598010004577
+    },
+    {
+        "name": "R4 P6",
+        "arena": {
+            "char": {
+                "rank": 1
+            },
+            "ship": {
+                "rank": 1
+            }
+        },
+        "updated": 1598010004574
+    },
+    {
+        "name": "RJC8575",
+        "arena": {
+            "char": {
+                "rank": 53
+            },
+            "ship": {
+                "rank": 7
+            }
+        },
+        "updated": 1598010004507
+    },
+    {
+        "name": "Nemesis",
+        "arena": {
+            "char": {
+                "rank": 29
+            },
+            "ship": {
+                "rank": 3
+            }
+        },
+        "updated": 1598010004154
+    },
+    {
+        "name": "KingKc",
+        "arena": {
+            "char": {
+                "rank": 95
+            },
+            "ship": {
+                "rank": 32
+            }
+        },
+        "updated": 1598010004107
+    },
+    {
+        "name": "kosmi",
+        "arena": {
+            "char": {
+                "rank": 24
+            },
+            "ship": {
+                "rank": 14
+            }
+        },
+        "updated": 1598010004028
+    },
+    {
+        "name": "Kru",
+        "arena": {
+            "char": {
+                "rank": 67
+            },
+            "ship": {
+                "rank": 15
+            }
+        },
+        "updated": 1598010003555
+    },
+    {
+        "name": "ZFinn4theWin",
+        "arena": {
+            "char": {
+                "rank": 71
+            },
+            "ship": {
+                "rank": 36
+            }
+        },
+        "updated": 1598010003247
+    },
+    {
+        "name": "Jako",
+        "arena": {
+            "char": {
+                "rank": 61
+            },
+            "ship": {
+                "rank": 7
+            }
+        },
+        "updated": 1598010003179
+    },
+    {
+        "name": "ndwilson",
+        "arena": {
+            "char": {
+                "rank": 40
+            },
+            "ship": {
+                "rank": 18
+            }
+        },
+        "updated": 1598010003121
+    },
+    {
+        "name": "Lukumich",
+        "arena": {
+            "char": {
+                "rank": 19
+            },
+            "ship": {
+                "rank": 4
+            }
+        },
+        "updated": 1598010002872
+    },
+    {
+        "name": "shogun shane",
+        "arena": {
+            "char": {
+                "rank": 553
+            },
+            "ship": {
+                "rank": 52
+            }
+        },
+        "updated": 1598010002837
+    },
+    {
+        "name": "Dred",
+        "arena": {
+            "char": {
+                "rank": 76
+            },
+            "ship": {
+                "rank": 33
+            }
+        },
+        "updated": 1598010002770
+    },
+    {
+        "name": "OrganDonor",
+        "arena": {
+            "char": {
+                "rank": 42
+            },
+            "ship": {
+                "rank": 6
+            }
+        },
+        "updated": 1598010002748
+    },
+    {
+        "name": "Tatooinish",
+        "arena": {
+            "char": {
+                "rank": 43
+            },
+            "ship": {
+                "rank": 4
+            }
+        },
+        "updated": 1598010002662
+    },
+    {
+        "name": "playersc",
+        "arena": {
+            "char": {
+                "rank": 98
+            },
+            "ship": {
+                "rank": 6
+            }
+        },
+        "updated": 1598010001796
+    },
+    {
+        "name": "Gavon Mothma",
+        "arena": {
+            "char": {
+                "rank": 73
             },
             "ship": {
                 "rank": 9
             }
         },
-        "updated": 1597956443922
+        "updated": 1598010001690
     },
     {
-        "name": "D\u039bRTH L\u039eX 4PDA",
+        "name": "Kamu Teeltoo",
         "arena": {
             "char": {
-                "rank": 3
+                "rank": 12
+            },
+            "ship": {
+                "rank": 8
+            }
+        },
+        "updated": 1598010001588
+    },
+    {
+        "name": "Saylar",
+        "arena": {
+            "char": {
+                "rank": 88
+            },
+            "ship": {
+                "rank": 10
+            }
+        },
+        "updated": 1598010001563
+    },
+    {
+        "name": "Bit",
+        "arena": {
+            "char": {
+                "rank": 2
+            },
+            "ship": {
+                "rank": 9
+            }
+        },
+        "updated": 1598010001333
+    },
+    {
+        "name": "Sicarii",
+        "arena": {
+            "char": {
+                "rank": 11
             },
             "ship": {
                 "rank": 3
             }
         },
-        "updated": 1597953274052
+        "updated": 1598010001230
+    },
+    {
+        "name": "yk",
+        "arena": {
+            "char": {
+                "rank": 7
+            },
+            "ship": {
+                "rank": 4
+            }
+        },
+        "updated": 1598010001156
+    },
+    {
+        "name": "TinTin",
+        "arena": {
+            "char": {
+                "rank": 28
+            },
+            "ship": {
+                "rank": 16
+            }
+        },
+        "updated": 1598010000774
+    },
+    {
+        "name": "aktarus70discord7542",
+        "arena": {
+            "char": {
+                "rank": 35
+            },
+            "ship": {
+                "rank": 14
+            }
+        },
+        "updated": 1598010000677
+    },
+    {
+        "name": "pikappa",
+        "arena": {
+            "char": {
+                "rank": 6
+            },
+            "ship": {
+                "rank": 7
+            }
+        },
+        "updated": 1598010000496
+    },
+    {
+        "name": "Super Anton  2",
+        "arena": {
+            "char": {
+                "rank": 4
+            },
+            "ship": {
+                "rank": 1
+            }
+        },
+        "updated": 1598010000220
+    },
+    {
+        "name": "TronTrek",
+        "arena": {
+            "char": {
+                "rank": 52
+            },
+            "ship": {
+                "rank": 22
+            }
+        },
+        "updated": 1598009861955
+    },
+    {
+        "name": "Deathshead",
+        "arena": {
+            "char": {
+                "rank": 25
+            },
+            "ship": {
+                "rank": 8
+            }
+        },
+        "updated": 1598009792556
+    },
+    {
+        "name": "\u0394L Syrex1982",
+        "arena": {
+            "char": {
+                "rank": 5
+            },
+            "ship": {
+                "rank": 6
+            }
+        },
+        "updated": 1598009724192
+    },
+    {
+        "name": "pantera",
+        "arena": {
+            "char": {
+                "rank": 13
+            },
+            "ship": {
+                "rank": 11
+            }
+        },
+        "updated": 1598009722925
+    },
+    {
+        "name": "Rastafarian Targarian",
+        "arena": {
+            "char": {
+                "rank": 46
+            },
+            "ship": {
+                "rank": 39
+            }
+        },
+        "updated": 1598009664695
+    },
+    {
+        "name": "DarthScratch",
+        "arena": {
+            "char": {
+                "rank": 18
+            },
+            "ship": {
+                "rank": 17
+            }
+        },
+        "updated": 1598009662513
+    },
+    {
+        "name": "Nkee4730",
+        "arena": {
+            "char": {
+                "rank": 101
+            },
+            "ship": {
+                "rank": 14
+            }
+        },
+        "updated": 1598009368954
+    },
+    {
+        "name": "Skyash",
+        "arena": {
+            "char": {
+                "rank": 191
+            },
+            "ship": {
+                "rank": 22
+            }
+        },
+        "updated": 1598009352803
+    },
+    {
+        "name": "jeffyjai",
+        "arena": {
+            "char": {
+                "rank": 17
+            },
+            "ship": {
+                "rank": 3
+            }
+        },
+        "updated": 1598009298938
+    },
+    {
+        "name": "Delvorin",
+        "arena": {
+            "char": {
+                "rank": 21
+            },
+            "ship": {
+                "rank": 7
+            }
+        },
+        "updated": 1598009289659
+    },
+    {
+        "name": "Corvin Grill",
+        "arena": {
+            "char": {
+                "rank": 48
+            },
+            "ship": {
+                "rank": 24
+            }
+        },
+        "updated": 1598009275520
+    },
+    {
+        "name": "D\u039bRTH L\u039eX 4PDA",
+        "arena": {
+            "char": {
+                "rank": 19
+            },
+            "ship": {
+                "rank": 4
+            }
+        },
+        "updated": 1598009187134
+    },
+    {
+        "name": "The Dark Crystal",
+        "arena": {
+            "char": {
+                "rank": 10
+            },
+            "ship": {
+                "rank": 5
+            }
+        },
+        "updated": 1598009178985
+    },
+    {
+        "name": "Cal Kwai",
+        "arena": {
+            "char": {
+                "rank": 15
+            },
+            "ship": {
+                "rank": 14
+            }
+        },
+        "updated": 1598008654331
+    },
+    {
+        "name": "Gunny71",
+        "arena": {
+            "char": {
+                "rank": 85
+            },
+            "ship": {
+                "rank": 15
+            }
+        },
+        "updated": 1597985164408
+    },
+    {
+        "name": "MKFLY",
+        "arena": {
+            "char": {
+                "rank": 2
+            },
+            "ship": {
+                "rank": 2
+            }
+        },
+        "updated": 1597975177978
+    },
+    {
+        "name": "Maitre Gonzo III",
+        "arena": {
+            "char": {
+                "rank": 115
+            },
+            "ship": {
+                "rank": 16
+            }
+        },
+        "updated": 1597974203015
+    },
+    {
+        "name": "TheMikeroni",
+        "arena": {
+            "char": {
+                "rank": 61
+            },
+            "ship": {
+                "rank": 42
+            }
+        },
+        "updated": 1597966585543
+    },
+    {
+        "name": "Vizo jr",
+        "arena": {
+            "char": {
+                "rank": 275
+            },
+            "ship": {
+                "rank": 46
+            }
+        },
+        "updated": 1597966077076
     },
     {
         "name": "Noterdam",
@@ -60,102 +744,6 @@
         "updated": 1597953141839
     },
     {
-        "name": "R4 P6",
-        "arena": {
-            "char": {
-                "rank": 22
-            },
-            "ship": {
-                "rank": 14
-            }
-        },
-        "updated": 1597953141764
-    },
-    {
-        "name": "TronTrek",
-        "arena": {
-            "char": {
-                "rank": 30
-            },
-            "ship": {
-                "rank": 21
-            }
-        },
-        "updated": 1597952989523
-    },
-    {
-        "name": "Old BenKenobi",
-        "arena": {
-            "char": {
-                "rank": 17
-            },
-            "ship": {
-                "rank": 16
-            }
-        },
-        "updated": 1597952989062
-    },
-    {
-        "name": "Force",
-        "arena": {
-            "char": {
-                "rank": 82
-            },
-            "ship": {
-                "rank": 7
-            }
-        },
-        "updated": 1597952988831
-    },
-    {
-        "name": "pantera",
-        "arena": {
-            "char": {
-                "rank": 8
-            },
-            "ship": {
-                "rank": 9
-            }
-        },
-        "updated": 1597952988524
-    },
-    {
-        "name": "GeneraleBeta97",
-        "arena": {
-            "char": {
-                "rank": 542
-            },
-            "ship": {
-                "rank": 29
-            }
-        },
-        "updated": 1597952951861
-    },
-    {
-        "name": "TinTin",
-        "arena": {
-            "char": {
-                "rank": 11
-            },
-            "ship": {
-                "rank": 8
-            }
-        },
-        "updated": 1597952951803
-    },
-    {
-        "name": "Bit",
-        "arena": {
-            "char": {
-                "rank": 32
-            },
-            "ship": {
-                "rank": 18
-            }
-        },
-        "updated": 1597952951695
-    },
-    {
         "name": "YaShoRab",
         "arena": {
             "char": {
@@ -166,42 +754,6 @@
             }
         },
         "updated": 1597952951586
-    },
-    {
-        "name": "Lukumich",
-        "arena": {
-            "char": {
-                "rank": 19
-            },
-            "ship": {
-                "rank": 2
-            }
-        },
-        "updated": 1597952951576
-    },
-    {
-        "name": "Sedavaa's",
-        "arena": {
-            "char": {
-                "rank": 64
-            },
-            "ship": {
-                "rank": 11
-            }
-        },
-        "updated": 1597952951371
-    },
-    {
-        "name": "MysteryBeef",
-        "arena": {
-            "char": {
-                "rank": 68
-            },
-            "ship": {
-                "rank": 26
-            }
-        },
-        "updated": 1597952951325
     },
     {
         "name": "Dealage",
@@ -216,102 +768,6 @@
         "updated": 1597952951174
     },
     {
-        "name": "Tartan Rekem",
-        "arena": {
-            "char": {
-                "rank": 97
-            },
-            "ship": {
-                "rank": 19
-            }
-        },
-        "updated": 1597952897968
-    },
-    {
-        "name": "Rastafarian Targarian",
-        "arena": {
-            "char": {
-                "rank": 46
-            },
-            "ship": {
-                "rank": 30
-            }
-        },
-        "updated": 1597952897890
-    },
-    {
-        "name": "Dregn",
-        "arena": {
-            "char": {
-                "rank": 36
-            },
-            "ship": {
-                "rank": 20
-            }
-        },
-        "updated": 1597952897814
-    },
-    {
-        "name": "Jako",
-        "arena": {
-            "char": {
-                "rank": 87
-            },
-            "ship": {
-                "rank": 20
-            }
-        },
-        "updated": 1597952897206
-    },
-    {
-        "name": "ndwilson",
-        "arena": {
-            "char": {
-                "rank": 31
-            },
-            "ship": {
-                "rank": 23
-            }
-        },
-        "updated": 1597952897066
-    },
-    {
-        "name": "DarthScratch",
-        "arena": {
-            "char": {
-                "rank": 18
-            },
-            "ship": {
-                "rank": 12
-            }
-        },
-        "updated": 1597952897043
-    },
-    {
-        "name": "TheMikeroni",
-        "arena": {
-            "char": {
-                "rank": 61
-            },
-            "ship": {
-                "rank": 42
-            }
-        },
-        "updated": 1597952896959
-    },
-    {
-        "name": "shogun shane",
-        "arena": {
-            "char": {
-                "rank": 553
-            },
-            "ship": {
-                "rank": 52
-            }
-        },
-        "updated": 1597952896860
-    },
-    {
         "name": "Tiric Thorn",
         "arena": {
             "char": {
@@ -324,150 +780,6 @@
         "updated": 1597952896804
     },
     {
-        "name": "Saylar",
-        "arena": {
-            "char": {
-                "rank": 75
-            },
-            "ship": {
-                "rank": 10
-            }
-        },
-        "updated": 1597952895873
-    },
-    {
-        "name": "Corvin Grill",
-        "arena": {
-            "char": {
-                "rank": 48
-            },
-            "ship": {
-                "rank": 24
-            }
-        },
-        "updated": 1597952895860
-    },
-    {
-        "name": "Castor Troy",
-        "arena": {
-            "char": {
-                "rank": 10
-            },
-            "ship": {
-                "rank": 13
-            }
-        },
-        "updated": 1597952895831
-    },
-    {
-        "name": "yk",
-        "arena": {
-            "char": {
-                "rank": 21
-            },
-            "ship": {
-                "rank": 6
-            }
-        },
-        "updated": 1597952895751
-    },
-    {
-        "name": "MKFLY",
-        "arena": {
-            "char": {
-                "rank": 57
-            },
-            "ship": {
-                "rank": 14
-            }
-        },
-        "updated": 1597952895699
-    },
-    {
-        "name": "The Dark Crystal",
-        "arena": {
-            "char": {
-                "rank": 33
-            },
-            "ship": {
-                "rank": 12
-            }
-        },
-        "updated": 1597952895509
-    },
-    {
-        "name": "pikappa",
-        "arena": {
-            "char": {
-                "rank": 39
-            },
-            "ship": {
-                "rank": 13
-            }
-        },
-        "updated": 1597952895422
-    },
-    {
-        "name": "Nkee4730",
-        "arena": {
-            "char": {
-                "rank": 15
-            },
-            "ship": {
-                "rank": 9
-            }
-        },
-        "updated": 1597952671358
-    },
-    {
-        "name": "RJC8575",
-        "arena": {
-            "char": {
-                "rank": 40
-            },
-            "ship": {
-                "rank": 11
-            }
-        },
-        "updated": 1597952670978
-    },
-    {
-        "name": "Derpy Face",
-        "arena": {
-            "char": {
-                "rank": 37
-            },
-            "ship": {
-                "rank": 134
-            }
-        },
-        "updated": 1597952670810
-    },
-    {
-        "name": "Nemesis",
-        "arena": {
-            "char": {
-                "rank": 13
-            },
-            "ship": {
-                "rank": 3
-            }
-        },
-        "updated": 1597952670759
-    },
-    {
-        "name": "Gunny71",
-        "arena": {
-            "char": {
-                "rank": 53
-            },
-            "ship": {
-                "rank": 7
-            }
-        },
-        "updated": 1597952670727
-    },
-    {
         "name": "StayAwhileAndListen",
         "arena": {
             "char": {
@@ -478,54 +790,6 @@
             }
         },
         "updated": 1597952670499
-    },
-    {
-        "name": "Coa020",
-        "arena": {
-            "char": {
-                "rank": 14
-            },
-            "ship": {
-                "rank": 5
-            }
-        },
-        "updated": 1597952670426
-    },
-    {
-        "name": "Hubbojnr Revanche",
-        "arena": {
-            "char": {
-                "rank": 50
-            },
-            "ship": {
-                "rank": 14
-            }
-        },
-        "updated": 1597952670167
-    },
-    {
-        "name": "kosmi",
-        "arena": {
-            "char": {
-                "rank": 1
-            },
-            "ship": {
-                "rank": 1
-            }
-        },
-        "updated": 1597952670160
-    },
-    {
-        "name": "Kru",
-        "arena": {
-            "char": {
-                "rank": 47
-            },
-            "ship": {
-                "rank": 1
-            }
-        },
-        "updated": 1597952669642
     },
     {
         "name": "SHTIZ",
@@ -552,54 +816,6 @@
         "updated": 1597952669487
     },
     {
-        "name": "Rvdbandit",
-        "arena": {
-            "char": {
-                "rank": 34
-            },
-            "ship": {
-                "rank": 9
-            }
-        },
-        "updated": 1597952669097
-    },
-    {
-        "name": "OrganDonor",
-        "arena": {
-            "char": {
-                "rank": 4
-            },
-            "ship": {
-                "rank": 2
-            }
-        },
-        "updated": 1597952668966
-    },
-    {
-        "name": "Delvorin",
-        "arena": {
-            "char": {
-                "rank": 7
-            },
-            "ship": {
-                "rank": 13
-            }
-        },
-        "updated": 1597952668958
-    },
-    {
-        "name": "Dred",
-        "arena": {
-            "char": {
-                "rank": 92
-            },
-            "ship": {
-                "rank": 25
-            }
-        },
-        "updated": 1597952668948
-    },
-    {
         "name": "Chaoswind",
         "arena": {
             "char": {
@@ -612,198 +828,6 @@
         "updated": 1597952668705
     },
     {
-        "name": "Tatooinish",
-        "arena": {
-            "char": {
-                "rank": 85
-            },
-            "ship": {
-                "rank": 17
-            }
-        },
-        "updated": 1597952668679
-    },
-    {
-        "name": "Josc",
-        "arena": {
-            "char": {
-                "rank": 219
-            },
-            "ship": {
-                "rank": 35
-            }
-        },
-        "updated": 1597952668603
-    },
-    {
-        "name": "playersc",
-        "arena": {
-            "char": {
-                "rank": 67
-            },
-            "ship": {
-                "rank": 5
-            }
-        },
-        "updated": 1597952668080
-    },
-    {
-        "name": "Fighting Egg",
-        "arena": {
-            "char": {
-                "rank": 159
-            },
-            "ship": {
-                "rank": 29
-            }
-        },
-        "updated": 1597952667930
-    },
-    {
-        "name": "Gavon Mothma",
-        "arena": {
-            "char": {
-                "rank": 56
-            },
-            "ship": {
-                "rank": 12
-            }
-        },
-        "updated": 1597952667893
-    },
-    {
-        "name": "Sicarii",
-        "arena": {
-            "char": {
-                "rank": 25
-            },
-            "ship": {
-                "rank": 11
-            }
-        },
-        "updated": 1597952667707
-    },
-    {
-        "name": "Maitre Gonzo III",
-        "arena": {
-            "char": {
-                "rank": 100
-            },
-            "ship": {
-                "rank": 16
-            }
-        },
-        "updated": 1597952667668
-    },
-    {
-        "name": "Vizo jr",
-        "arena": {
-            "char": {
-                "rank": 275
-            },
-            "ship": {
-                "rank": 46
-            }
-        },
-        "updated": 1597952667568
-    },
-    {
-        "name": "rpm116",
-        "arena": {
-            "char": {
-                "rank": 154
-            },
-            "ship": {
-                "rank": 30
-            }
-        },
-        "updated": 1597952667037
-    },
-    {
-        "name": "Mikayas",
-        "arena": {
-            "char": {
-                "rank": 70
-            },
-            "ship": {
-                "rank": 6
-            }
-        },
-        "updated": 1597952666861
-    },
-    {
-        "name": "Super Anton  2",
-        "arena": {
-            "char": {
-                "rank": 29
-            },
-            "ship": {
-                "rank": 5
-            }
-        },
-        "updated": 1597952666797
-    },
-    {
-        "name": "\u0394L Syrex1982",
-        "arena": {
-            "char": {
-                "rank": 16
-            },
-            "ship": {
-                "rank": 20
-            }
-        },
-        "updated": 1597952666780
-    },
-    {
-        "name": "aktarus70discord7542",
-        "arena": {
-            "char": {
-                "rank": 27
-            },
-            "ship": {
-                "rank": 9
-            }
-        },
-        "updated": 1597952666538
-    },
-    {
-        "name": "Deathshead",
-        "arena": {
-            "char": {
-                "rank": 5
-            },
-            "ship": {
-                "rank": 4
-            }
-        },
-        "updated": 1597952666537
-    },
-    {
-        "name": "jeffyjai",
-        "arena": {
-            "char": {
-                "rank": 9
-            },
-            "ship": {
-                "rank": 11
-            }
-        },
-        "updated": 1597952666524
-    },
-    {
-        "name": "Cal Kwai",
-        "arena": {
-            "char": {
-                "rank": 26
-            },
-            "ship": {
-                "rank": 20
-            }
-        },
-        "updated": 1597952666328
-    },
-    {
         "name": "Jv iron",
         "arena": {
             "char": {
@@ -814,29 +838,5 @@
             }
         },
         "updated": 1597951996266
-    },
-    {
-        "name": "Kamu Teeltoo",
-        "arena": {
-            "char": {
-                "rank": 28
-            },
-            "ship": {
-                "rank": 17
-            }
-        },
-        "updated": 1597951812600
-    },
-    {
-        "name": "ZFinn4theWin",
-        "arena": {
-            "char": {
-                "rank": 77
-            },
-            "ship": {
-                "rank": 46
-            }
-        },
-        "updated": 1597950998364
     }
 ]
